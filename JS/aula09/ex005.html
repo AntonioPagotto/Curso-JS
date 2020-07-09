@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(101, 101, 223);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando DOM</h1>
+    <p>Resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        /*
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'
+        // tbm posso ao inves de usar var:
+        document.getElementById('msg').innerText = 'Olá!'
+        // mas é melhor simplificar:
+        d.innerText = 'Troquei'
+        */
+        /* por name
+        var d = document.getElementsByName('msg')[0]
+        d.innerText = 'Olá'
+        */
+       /* var d = document.getElementsByClassName('msg')[0]
+        d.innerText = 'Jubileu' */
+
+        // por queryselector:
+
+        var d = document.querySelector('div#msg')
+        d.style.background = 'blue'
+
+
+
+
+
+    </script>
+</body>
+</html>
