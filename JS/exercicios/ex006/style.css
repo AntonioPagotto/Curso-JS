@@ -1,0 +1,33 @@
+body{
+    background: rgb(0, 0, 78);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+header {
+
+        color: #ffffff;
+        text-align: center;
+}
+section {
+    background: #ffffff;
+    border-radius:20px;
+    padding:15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.637);
+    text-align: left;
+}
+footer {
+    margin-top:20px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+select#flista{
+    width:150px;
+}
+@media only screen and (max-width: 600px){
+    section{
+        width: 400px;
+    }
+}
